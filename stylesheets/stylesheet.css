@@ -9,6 +9,13 @@ by Jason Costello, @jsncostello
 MeyerWeb Reset
 *******************************************************************************/
 
+/******* WEB FONTS *******/
+/*******************************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Marvel);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,7 +60,7 @@ body {
   color:#373737;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  font-family: Quicksand, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -62,39 +69,42 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
   color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  font-family: Quicksand, Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 36px "Quicksand", sans-serif;
   font-weight: 700;
 }
 
 h2 {
   padding-bottom: 10px;
-  font-size: 32px;
   background: url('../images/bg_hr.png') repeat-x bottom;
+  font: 32px "Quicksand", sans-serif;
+}
+
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 24px "Quicksand", sans-serif;
 }
 
 h4 {
-  font-size: 21px;
+  font-size: 21px "Quicksand", sans-serif;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 18px "Quicksand", sans-serif;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 16px "Quicksand", sans-serif;
 }
 
 p {
   margin: 10px 0 15px 0;
+  font-size: 16px "Quicksand", sans-serif;
 }
 
 footer p {
@@ -162,7 +172,7 @@ pre, code {
   color: #222;
   background-color: #fff;
 
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Quicksand", Terminal, monospace;
   font-size: 14px;
 
   border-radius: 2px;
@@ -269,48 +279,54 @@ Full-Width Styles
   margin: 0 auto;
 }
 
-#forkme_banner {
-  display: block;
-  position: absolute;
-  top:0;
-  right: 10px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
-  color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
+
 
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+  background-image: url(../images/header-outer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 5%;
+
 }
 
 #header_wrap .inner {
   padding: 50px 10px 30px 10px;
+  background-image: url(../images/header-outer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #project_title {
-  margin: 0;
-  color: #fff;
+margin-top: 5%;
+  color: #9900FF;
   font-size: 42px;
   font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
+  float: left;
+
 }
 
+#tag_color {
+/*  margin: 0;*/
+  font-size: 42px;
+  font-weight: 700;
+  color: #CC0066;
+  float: left;
+  margin-right: 10%;
+  margin-top: 5%;
+  display: inline-block;
+}
+
+}
 #project_tagline {
-  color: #fff;
+  color: #333;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
   background: none;
-  text-shadow: #111 0px 0px 10px;
+  float: right;
+  margin-left: 30%;
+  display: inline-block;
 }
 
 #downloads {
