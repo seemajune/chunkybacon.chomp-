@@ -37,19 +37,33 @@
 <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>10.30.14
 </h3>
 
+<h3>Let's set up a form for creating a new blog post.</h3> 
+
+<p> Run 'rake routes' && check if you need to add a new route.
+ </p>
+<p>To add the route, head over to config ---> routes.rb and add the appropriate routes: </p>
+<figure><img src="images/routes.png" height="300" width="600"></img></figure>
+
+
+
 <h3>In Rails, the Action View FormHelper form_for method allows you to
 refer to an instance of an object in your database (i.e. @post below).</h3>
-
 <p>So you can call methods on the form builder object "f" to create form controls.
 </p>
 <figure><img src="images/form_for.png" height="400" width="600"></img></figure>
 <figure><img src="images/form_post.png" height="500" width="500"></img></figure>
 
+<p> If you've added additional attributes, generate the proper migrations. For this case, we ran 'rails g migration posts title:string post_content:string'</p>
+
+<p> In app --> controllers --> post_controller.rb we specify our show, new and create methods. We also set up post_params as a private method, making sure they match the form params:</p>
+<figure><img src="images/param2.png" height="400" width="500"></img></figure>
+
+<figure><img src="images/param.png" height="300" width="800"></img></figure>
+
 <p><a href="http://http://guides.rubyonrails.org/form_helpers.html"><span class="octicon octicon-link">The RoR FormHelper guide</span></a></p>
 <p><a href="http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html"<span class="octicon octicon-link">See the API doc on FormTagHelper</span></a></p>
 
 
- 
 <h2>
 <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Ruby Modules for Namespacing</h2>
 
