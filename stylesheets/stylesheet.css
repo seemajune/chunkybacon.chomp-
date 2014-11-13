@@ -339,6 +339,22 @@ margin-top: 5%;
   background: url('../images/icon_download.png') no-repeat 0% 90%;
 }
 
+#test_stuff {
+  width: 200px;
+  height: 200px;
+  border-radius: 500px;
+  color:#fff;
+  line-height: 100px;
+  text-align: center;
+  background: #000;
+  font: 100px "Quicksand", sans-serif;
+  position: absolute;
+  margin-bottom: 20px;
+  clear: both;
+  right: 500px;
+}
+
+
 .zip_download_link {
   display: block;
   float: right;

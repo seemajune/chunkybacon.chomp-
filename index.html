@@ -27,8 +27,37 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
 
+
+ <!-- -------------------------------------------------- -->
+ <!-- ------------title here--- -->
+  <h2><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>JQuery .animate() </h2>
+
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>11.13.14</h3>
+ <!-- ------------js here--- -->
+<div id="test_stuff">hi!</div>  
+
+
+<p style="padding-top:40%;">Add required links to the js file you want to load, as well as the CDN library to the bottom of your index.html file</p>
+<figure><img src="images/link_cdn.png" height="200" width="1000"></img></figure> 
+<p>Add a new div class or id to your CSS file.</p>
+<figure><img src="images/test_stuff.png" height="400" width="800"></img></figure> 
+
+<h3>     </h3>
+<p>Create your animate function structured as follows, and add it to a new .js file which you will link to at the bottom of the html file: </p>
+<h3> $(selector).animate({params},speed,callback); </h3>
+
+<p>$(PUT YOUR DIV ID/CLASS HERE).animate.({LEFT OR RIGHT HERE: POSITION IN PX HERE}, 
+FAST OR SLOW HERE);</p>
+
+
+<p><a href="http://www.smashingmagazine.com/2012/05/31/50-jquery-function-demos-for-aspiring-web-developers/"><span class="octicon octicon-link">Check out 'Useful jQuery Function Demos For Your Projects'</span></a></p>
+
+<p><a href="http://www.w3schools.com/jquery/jquery_animate.asp"><span class="octicon octicon-link">Check out W3C's JQuery Animations Guide</span></a></p>
+<br />
+<!-- -------------------------------------------------- -->
 <h2><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Action View FormHelper </h2>
 
 
@@ -89,6 +118,10 @@ refer to an instance of an object in your database (i.e. @post below).</h3>
       </footer>
     </div>
 
+  <!-- jQuery Library loaded via CDN -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Link to our local selectors.js script -->
+  <script src="javascripts/test.js"></script>
     
 
   </body>
