@@ -376,6 +376,12 @@ margin-top: 5%;
   margin-left: 10px;
 }
 
+.text-low-grey {
+  padding-top: 15%;
+  font-weight: bolder;
+  color: #555;
+}
+
 .zip_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top left;
 }
