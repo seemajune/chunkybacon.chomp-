@@ -2,57 +2,47 @@
 <!--   <link rel="icon" sizes="16x16 32x32" href="/images/keke.ico"> -->
         <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="chunkybacon.chomp!: learning Ruby programming">
-
+    <meta name="description" content="chunkybacon.chomp!: JQuery animations">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
     <title>chunkybacon.chomp!</title>
   </head>
-
   <body>
 
-    <!-- HEADER -->
+<!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <h1><div id="project_title">chunkybacon</div><div id = "tag_color">.chomp!</div></h1>
-
         </header>
     </div>
 
-    <!-- MAIN CONTENT -->
+<!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-         <a class="text-low-grey" href="index.html"> ← </a>
+        <a class="text-low-grey" href="index.html"> ← </a>
+        <h2><a href="JQuery-Animate.html"><span class="octicon octicon-link"></span>JQuery .animate()</a></h2>
+        <h3>11.13.14</h3>
 
-<h2><a href="JQuery-Animate.html">
-    <span class="octicon octicon-link"></span>JQuery .animate()</a></h2>
-<h3><a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>11.13.14</h3>
- <!-- ------------js here--- -->
-<div id="test_stuff">hi!</div>  
+<!-- SCRIPT -->
+      <div id="test_stuff">hi!</div>  
 
-<p style="padding-top:40%;">Add required links to the js file you want to load, as well as the CDN library to the bottom of your index.html file</p>
-<figure><img src="images/link_cdn.png" height="200" width="1000"></img></figure> 
-<p>Add a new div class or id to your CSS file.</p>
-<figure><img src="images/test_stuff.png" height="400" width="800"></img></figure> 
+      <p style="padding-top:40%;">Add required links to the js file you want to load, as well as the CDN library to the bottom of your index.html file</p>
+      <figure><img src="images/link_cdn.png" height="200" width="1000"></img></figure> 
+      <p>Add a new div class or id to your CSS file.</p>
+      <figure><img src="images/test_stuff.png" height="400" width="800"></img></figure> 
+      <p>Create your animate function structured as follows, and add it to a new .js file which you will link to at the bottom of the html file: </p>
+      <h3> $(selector).animate({params},speed,callback); </h3>
+      <p>$(PUT YOUR DIV ID/CLASS HERE).animate.({LEFT OR RIGHT HERE: POSITION IN PX HERE}, 
+      FAST OR SLOW HERE);</p>
+      <p><a href="http://www.smashingmagazine.com/2012/05/31/50-jquery-function-demos-for-aspiring-web-developers/"><span class="octicon octicon-link">Check out 'Useful jQuery Function Demos For Your Projects'</span></a></p>
+      <p><a href="http://www.w3schools.com/jquery/jquery_animate.asp"><span class="octicon octicon-link">Check out W3C's JQuery Animations Guide</span></a></p>
+      <br />
+    </section>
+  </div>
 
-<h3>     </h3>
-<p>Create your animate function structured as follows, and add it to a new .js file which you will link to at the bottom of the html file: </p>
-<h3> $(selector).animate({params},speed,callback); </h3>
-
-<p>$(PUT YOUR DIV ID/CLASS HERE).animate.({LEFT OR RIGHT HERE: POSITION IN PX HERE}, 
-FAST OR SLOW HERE);</p>
-
-
-<p><a href="http://www.smashingmagazine.com/2012/05/31/50-jquery-function-demos-for-aspiring-web-developers/"><span class="octicon octicon-link">Check out 'Useful jQuery Function Demos For Your Projects'</span></a></p>
-
-<p><a href="http://www.w3schools.com/jquery/jquery_animate.asp"><span class="octicon octicon-link">Check out W3C's JQuery Animations Guide</span></a></p>
-<br />
-
-    <!-- FOOTER  -->
+<!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="copyright">chunkybacon.chomp! maintained by <a href="https://github.com/seemajune">seemajune</a></p>
@@ -60,9 +50,10 @@ FAST OR SLOW HERE);</p>
       </footer>
     </div>
 
-  <!-- jQuery Library loaded via CDN -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- Link to our local selectors.js script -->
-  <script src="javascripts/test.js"></script>
-</body>
+<!-- jQuery Library loaded via CDN -->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Link to our local selectors.js script -->
+      <script src="javascripts/test.js"></script>
+
+  </body>
 </html>

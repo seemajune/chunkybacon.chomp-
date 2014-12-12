@@ -1,100 +1,50 @@
 <!DOCTYPE html>
 <!--   <link rel="icon" sizes="16x16 32x32" href="/images/keke.ico"> -->
-        <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
+<!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
 <html>
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="chunkybacon.chomp!: learning Ruby programming">
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <title>chunkybacon.chomp!</title>
   </head>
-  <body>
+    <body>
+<!-- HEADER -->
+      <div id="header_wrap" class="outer">
+          <header class="inner">
+            <h1><div id="project_title">chunkybacon</div><div id = "tag_color">.chomp!</h1></div>
+          </header>
+      </div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <h1> <div id="project_title">chunkybacon</div><div id = "tag_color">.chomp!</div>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
+<!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-
-  <h2><a href="manually-updating-gems.html"><span class="octicon octicon-link">Tips for Manually Adding Files to your Gem's Library</span></a></h2>
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>11.27.14</h3>
- 
- <h2><a href="JQuery-Animate.html">
-    <span class="octicon octicon-link"></span>JQuery .animate()</a></h2>
-<h3><a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>11.13.14</h3>
- 
-<!-- *****FINISH FORMATTING HERE -------------------------------------------------- -->
-<h2><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span>Action View FormHelper </a></h2>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>10.30.14
-</h3>
-
-<h3>Let's set up a form for creating a new blog post.</h3> 
-
-<p> Run 'rake routes' && check if you need to add a new route.
- </p>
-<p>To add the route, head over to config ---> routes.rb and add the appropriate routes: </p>
-<figure><img src="images/routes.png" height="300" width="600"></img></figure>
-
-
-
-<h3>In Rails, the Action View FormHelper form_for method allows you to
-refer to an instance of an object in your database (i.e. @post below).</h3>
-<p>So you can call methods on the form builder object "f" to create form controls.
-</p>
-<figure><img src="images/form_for.png" height="400" width="600"></img></figure>
-<figure><img src="images/form_post.png" height="500" width="500"></img></figure>
-
-<p> If you've added additional attributes, generate the proper migrations. For this case, we ran 'rails g migration posts title:string post_content:string'</p>
-
-<p> In app --> controllers --> post_controller.rb we specify our show, new and create methods. We also set up post_params as a private method, making sure they match the form params:</p>
-<figure><img src="images/param2.png" height="400" width="500"></img></figure>
-
-<figure><img src="images/param.png" height="300" width="800"></img></figure>
-
-<p><a href="http://guides.rubyonrails.org/form_helpers.html"><span class="octicon octicon-link">The RoR FormHelper guide</span></a></p>
-<p><a href="http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html"<span class="octicon octicon-link">See the API doc on FormTagHelper</span></a></p>
-
-
-<h2>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span>Ruby Modules for Namespacing</a></h2>
-
-<p></p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>10.16.14</h3>
-
-<p>Aside from mixins, NAMESPACING is another common use of modules in Ruby. Namespacing is a technique implemented in code structure in order to avoid mixups when you have multiple classes/objects sharing the same name. Use a module to house these objects- and BAM! A namespace:</p>
-<figure><img src="images/string.png" height="400" width="600"></img></figure>
-<figure><img src="images/bash.png" height="200" width="280" id="image-center"></img></figure>
-
-<p><a href="http://rubymonk.com/learning/books/1-ruby-primer/chapters/35-modules/lessons/80-modules-as-namespaces"><span class="octicon octicon-link">See RubyMonk for more on Modules & Namespacing</span></a></p>
-
+        <h3>12.12.14</h3>
+        <h2><a href="aesthetic-code.html">Aesthetic Code</a></h2>
+        <h3>11.27.14</h3>
+        <h2><a href="manually-updating-gems.html">Tips for Manually Adding Files to your Gem's Library</a></h2>
+        <h3>11.13.14</h3>   
+        <h2><a href="JQuery-Animate.html">JQuery .animate()</a></h2>
+        <h3>10.30.14</h3>
+        <h2><a href="form-helper.html">Action View FormHelper</a></h2>
+        <h3>10.16.14</h3>
+        <h2><a href="Modules-namespacing.html"><span class="octicon octicon-link"></span>Ruby Modules for Namespacing</a></h2>
       </section>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">chunkybacon.chomp! maintained by <a href="https://github.com/seemajune">seemajune</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<!-- FOOTER  -->
+      <div id="footer_wrap" class="outer">
+        <footer class="inner">
+          <p class="copyright">chunkybacon.chomp! maintained by <a href="https://github.com/seemajune">seemajune</a></p>
+          <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        </footer>
+      </div>
 
-  <!-- jQuery Library loaded via CDN -->
+<!-- jQuery Library loaded via CDN -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- Link to our local selectors.js script -->
+<!-- Link to our local selectors.js script -->
   <script src="javascripts/test.js"></script>
-    
 
   </body>
 </html>

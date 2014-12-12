@@ -1,76 +1,51 @@
 <!DOCTYPE html>
 <!--   <link rel="icon" sizes="16x16 32x32" href="/images/keke.ico"> -->
-        <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
+<!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="chunkybacon.chomp!: learning Ruby programming">
-
+    <meta name="description" content="chunkybacon.chomp!: Manually updating gems">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
     <title>chunkybacon.chomp!</title>
-  </head>
+  </head> 
   <body>
-
 <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner">
-
-          <h1><div id="project_title">chunkybacon</div><div id = "tag_color">.chomp!</div></h1>
-
-        </header>
+      <header class="inner">
+        <h1><div id="project_title">chunkybacon</div><div id = "tag_color">.chomp!</div></h1>
+      </header>
     </div>
-
 <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-         <a class="text-low-grey" href="index.html"> ← </a>
-  <h2><a href="manually-updating-gems.html"><span class="octicon octicon-link">Tips for Manually Adding Files to your Gem's Library</span></a></h2>
-
-
-<h3>
-  <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>11.27.14
-</h3>
- 
-
-<h3>While working on my most recent group project, a Rails app that requires integrating the Stanford Core Natural Language Processing library, I ran into a few issues: 
-  <ul> 
-    <li> In order to get full functionality, we had to download the StanfordCoreNLP pipeline, which does not come pre-packaged with the gem. </li>
-    <li> In attempt to fix this issue, I tried running bundle install, but to no avail. </li> 
-    <li> This particular gem includes a lot of Javadoc and specific Java classes that require manual load to the gemfile's /bin sub-directory.</li> 
-  </ul>
-     
-  <h3>With the help of my team mate,  <a href="https://github.com/louismullie/stanford-core-nlp"><span class="octicon octicon-link">and this very useful set of instructions for installing the stanford-core-nlp pipeline/specified docs</span></a> I was able to manually install the files directly to my gem's library directory. </h3> 
-</h3><h3>As a result, I am happy to say, I put to use a few things I've learned at<a href="http://flatironschool.com"><span class="octicon octicon-link"> Flatiron School</span></a>  from this experience: </h3>
-
-<ol> 
-  <li>The bash command for finding the directory name that houses all of your gems is: gem environment</li>
-    <li>To move any new files that you download into your gem's /bin or /lib subdirectory, you can do so directly from your terminal by typing mv /path/to/source  /path/to/destination</li>
-   <li>Note that, in order to move all files housed in a sub-directory, you should type the path/to/source followed by an asterisk* like so: mv /path/to/subdirectory-name/*  /path/to/destination</li>
-      <li>This can get messy when you're downloading a bunch of different files, so always check the downloaded files in case any of them need to be unzipped/unarchived, and unzip them before moving them into the gem's directory.</li>
-</ol>
-
-<br />
-
-
+        <a class="text-low-grey" href="index.html"> ← </a>
+        <h2><a href="manually-updating-gems.html"><span class="octicon octicon-link">Tips for Manually Adding Files to your Gem's Library</span></a></h2>
+        <h3>11.27.14</h3>
+        <p>While working on my most recent group project, a Rails app that requires integrating the Stanford Core Natural Language Processing library, I ran into a few issues:</p>
+          <ul> 
+            <li> In order to get full functionality, we had to download the StanfordCoreNLP pipeline, which does not come pre-packaged with the gem. </li>
+            <li> In attempt to fix this issue, I tried running bundle install, but to no avail.</li> 
+            <li> This particular gem includes a lot of Javadoc and specific Java classes that require manual load to the gemfile's /bin sub-directory.</li> 
+          </ul>      
+        <p>With the help of my team mate,  <a href="https://github.com/louismullie/stanford-core-nlp"><span class="octicon octicon-link">and this very useful set of instructions for installing the stanford-core-nlp pipeline/specified docs</span></a> I was able to manually install the files directly to my gem's library directory.</p> 
+        <p>As a result, I am happy to say, I put to use a few things I've learned at<a href="http://flatironschool.com"><span class="octicon octicon-link"> Flatiron School</span></a> from this experience:</p>
+          <ol> 
+            <li>The bash command for finding the directory name that houses all of your gems is: gem environment
+            </li>
+            <li>To move any new files that you download into your gem's /bin or /lib subdirectory, you can do so directly from your terminal by typing mv /path/to/source  /path/to/destination</li>
+            <li>Note that, in order to move all files housed in a sub-directory, you should type the path/to/source followed by an asterisk* like so: mv /path/to/subdirectory-name/*  /path/to/destination</li>
+            <li>This can get messy when you're downloading a bunch of different files, so always check the downloaded files in case any of them need to be unzipped/unarchived, and unzip them before moving them into the gem's directory.</li>
+          </ol>
+          <br />
       </section>
     </div>
-
-    <!-- FOOTER  -->
+<!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="copyright">chunkybacon.chomp! maintained by <a href="https://github.com/seemajune">seemajune</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-  <!-- jQuery Library loaded via CDN -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- Link to our local selectors.js script -->
-  <script src="javascripts/test.js"></script>
-    
-
   </body>
 </html>

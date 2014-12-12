@@ -1,0 +1,59 @@
+!DOCTYPE html>
+<!--   <link rel="icon" sizes="16x16 32x32" href="/images/keke.ico"> -->
+        <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
+<html>
+    <head>
+      <meta charset='utf-8'>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1">
+      <meta name="description" content="chunkybacon.chomp!: aesthetic code">
+      <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+      <title>chunkybacon.chomp!</title>
+    </head>
+  <body>
+
+<!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <h1><div id="project_title">chunkybacon</div><div id = "tag_color">.chomp!</div></h1>
+        </header>
+    </div>
+
+<!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <a class="text-low-grey" href="index.html"> ← </a>
+        <h2><a href="form-helper.html">Action View FormHelper</a></h2>
+        
+        <p>Let's set up a form for creating a new blog post.</p>       
+        <p> Run 'rake routes' && check if you need to add a new route.</p>
+        <p>To add the route, head over to config ---> routes.rb and add the appropriate routes:</p>
+          <figure><img src="images/routes.png" height="300" width="600"></img></figure>
+        <p>In Rails, the Action View FormHelper form_for method allows you to
+            refer to an instance of an object in your database (i.e. @post below).
+        </p>    
+        <p>So you can call methods on the form builder object "f" to create form controls.</p>
+          <figure><img src="images/form_for.png" height="400" width="600"></img></figure>
+          <figure><img src="images/form_post.png" height="500" width="500"></img></figure>
+        <p> If you've added additional attributes, generate the proper migrations. For this case, we ran 'rails g migration posts title:string post_content:string'
+        </p>
+          
+        <p> In app --> controllers --> post_controller.rb we specify our show, new and create methods. We also set up post_params as a private method, making sure they match the form params:
+        </p>
+        <figure><img src="images/param2.png" height="400" width="500"></img></figure>
+        <figure><img src="images/param.png" height="300" width="800"></img></figure>
+        
+        <p><a href="http://guides.rubyonrails.org/form_helpers.html"><span class="octicon octicon-link">The RoR FormHelper guide</span></a>
+        </p>
+          
+        <p><a href="http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html"<span class="octicon octicon-link">See the API doc on FormTagHelper</span></a></p>
+      </section>
+    </div>
+
+<!-- FOOTER  -->
+      <div id="footer_wrap" class="outer">
+        <footer class="inner">
+          <p class="copyright">chunkybacon.chomp! maintained by <a href="https://github.com/seemajune">seemajune</a></p>
+          <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        </footer>
+  </body>
+</html>
