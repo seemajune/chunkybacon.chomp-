@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--   <link rel="icon" sizes="16x16 32x32" href="/images/keke.ico"> -->
+<!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="chunkybacon.chomp!: Manually updating gems">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>chunkybacon.chomp!</title>
+  </head> 
+  <body>
+<!-- HEADER -->
+    <div id="header_wrap" class="outer">
+      <header class="inner">
+        <h1><div id="project_title">chunkybacon</div><div id = "tag_color">.chomp!</div></h1>
+      </header>
+    </div>
+<!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <a class="text-low-grey" href="index.html"> ← </a>
+        <h2><a href="js-closures.html"><span class="octicon octicon-link">Closure Encounters...</span></a></h2>
+        <h3>12.15.14</h3>
+
+        <p>Below is a quick example of a JavaScript closure using simple math.</p>
+        <h3>function myClosure(num) {</h3>
+          <h3 style="padding-left:2%;">var product = num * 8;</h3>
+          <h3 style="padding-left:2%;">return function(evenNumber) {</h3>
+          <h3 style="padding-left:2%;">product * evenNumber</h3>
+          <h3 style="padding-left:2%;">  }; </h3>
+        <h3>}</h3>
+        <p>// Notice I do not immeidately invoke the inner function. This is so that I can use it by calling it later.</p>
+
+        <h3>var newMathStuff = myClosure(10);</h3>
+        <p> // I'm calling the outer function and passing it an argument of 10.</p>
+        <p>// makes var product equal to 80 in this case. Now I have the value 80 available to me within the inner function that I am about to use ...</p>
+        <p>// Now, I can call the inner function, using the new variable 'newMathStuff'</p>
+
+        <p>// In doing so, I have  CLOSED the outer function: (the part of the function that calculates num * 8)</p>
+
+        <h3>newMathStuff(2);</h3>
+         <p>// Here, I am using the inner function, that has been returned VIA the outer function,and passing it an argument of 2 (the 'evenNumber' parameter) </p>
+        <p>// In this case, the function multiplies the product variable by 2</p>
+        <p>// (in this case, that's 80 * 2, returning a value of 160.) </p>
+         
+        <h3>newMathStuff(4);</h3>
+        <p>// Here, I call the inner function again, and now I get a value of 320. </p>
+
+        <p>// AND I can ALSO repurpose my closure by setting the outer most function equal to a new variable once again. </p>
+
+        <h3>var anotherNewTrick = myClosure(50);</h3>
+        <p> // product is now 400</p>
+
+        <h3>anotherNewTrick(4);</h3> 
+        <p>// passes 4 to the inner function, returning 1600. </p>
+
+        <p>// BOOM! A simple and hopefully helpful example to understand why closures are cool.</p>
+        <p><a href="http://www.w3schools.com/js/js_function_closures.asp"><span class="octicon octicon-link">Read more about JS Closures</span></a></p>
+      </section>
+    </div>
+<!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">chunkybacon.chomp! maintained by <a href="https://github.com/seemajune">seemajune</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
